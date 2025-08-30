@@ -7,8 +7,10 @@ int main() {
 
     float temp; 
     printf("Digite a temperatura em °C: ");
-    scanf_s("%f", &temp);
-    float conversao = (temp*1.8) + 32;
-    printf("A temperatura %2.f°C em Fahrenheit %2.f°F", temp, conversao);
+    scanf_s("%f", &temp); // Lê temperatura em Celsius
+
+    float conversao = (temp*1.8) + 32; // Converte para Fahrenheit
+    printf("A temperatura %.2f°C em Fahrenheit é %.2f°F\n", temp, conversao);
+
     return 0;
 }
