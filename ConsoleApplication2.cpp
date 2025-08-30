@@ -1,5 +1,6 @@
-#include <stdio.h>
-#include <locale.h>
+#include <stdio.h>   // Biblioteca padrão de entrada e saída (printf, scanf)
+#include <locale.h>  // Biblioteca para configuração de localidade (acentos, língua)
+
 
 int main() {
     setlocale(LC_ALL, "pt-br");
@@ -14,3 +15,4 @@ int main() {
 
     return 0;
 }
+
