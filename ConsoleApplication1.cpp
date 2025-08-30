@@ -1,5 +1,6 @@
-#include <stdio.h>
-#include <locale.h>
+#include <stdio.h>   // Biblioteca padrão de entrada e saída (printf, scanf)
+#include <locale.h>  // Biblioteca para configuração de localidade (acentos, língua)
+
 
 // Função para converter metros em decímetros
 void dec() {
@@ -47,3 +48,4 @@ int main() {
 
     return 0;
 }
+
