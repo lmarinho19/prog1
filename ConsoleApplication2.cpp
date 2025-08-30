@@ -1,18 +1,20 @@
-#include <stdio.h>   // Biblioteca padrão de entrada e saída (printf, scanf)
-#include <locale.h>  // Biblioteca para configuração de localidade (acentos, língua)
-
+#include <stdio.h>   // Biblioteca para funções de entrada e saída
+#include <locale.h>  // Biblioteca para configurar acentuação em português
 
 int main() {
-    setlocale(LC_ALL, "pt-br");
-    printf("Conversor de medidas\n");
+    setlocale(LC_ALL, "pt-br"); // Habilita caracteres especiais do português
+    
+    printf("Conversor de Celsius para Fahrenheit\n\n"); // Título do programa
+    
+    float temp; // Variável para armazenar a temperatura em Celsius
+    printf("Digite a temperatura em °C: "); // Solicita entrada do usuário
+    scanf_s("%f", &temp); // Lê o valor digitado pelo usuário
 
-    float temp; 
-    printf("Digite a temperatura em °C: ");
-    scanf_s("%f", &temp); // Lê temperatura em Celsius
-
-    float conversao = (temp*1.8) + 32; // Converte para Fahrenheit
+    // Fórmula de conversão: (C × 9/5) + 32 = F
+    float conversao = (temp * 1.8) + 32; // Converte Celsius para Fahrenheit
+    
+    // Exibe o resultado com duas casas decimais
     printf("A temperatura %.2f°C em Fahrenheit é %.2f°F\n", temp, conversao);
 
-    return 0;
+    return 0; // Finaliza o programa com sucesso
 }
-
